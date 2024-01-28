@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" This Is Description For Project 1" />
+    <title>Project 2</title>
+    <!--Bootstrap File-->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <!--Main Css File-->
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="overlay position-fixed top-50 start-50 translate-middle"></div>
+    <div class="root py-5 px-3">
+      <div
+        class="modal-wrapper d-flex flex-column gap-4 position-fixed top-50 start-50 translate-middle"
+      >
+        <div class="success-modal px-3 py-5 position-relative rounded-4">
+          <div class="character-wrapper position-absolute rounded-circle">
+            <div class="img-wrapper position-relative h-100 w-100">
+              <img
+                src="/media/tkthao219-bunny.gif"
+                class="character position-absolute w-100 object-fit-contain"
+              />
+            </div>
+          </div>
+          <button
+            class="close d-flex justify-content-center align-items-center position-absolute rounded-circle"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="container">
+            <div class="score-percentage mb-4 d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-2 m-0">
+              <p class="title m-0">your score is:</p>
+              <span class="score-percentage-num green">70%</span>
+            </div>
+            <div class="words-wrapper d-flex align-items-center gap-2">
+              <button
+                class="btn disabled d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <div class="words-score d-flex flex-column flex-sm-row align-items-center gap-2 flex-grow-1">
+                <div class="d-flex gap-2">
+                  <span class="word">sad</span>
+                  <span class="green">(93%)</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="word">man</span>
+                  <span class="yellow">(47%)</span>
+                </div>
+              </div>
+              <button
+                class="btn d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="score-bar rounded-5"></div>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between cards-wrapper">
+          <div class="card d-flex flex-column gap-5">
+            <div class="card-container rounded-5" data-id="card1">
+              <div
+                class="card-front p-md-3 p-2 d-flex flex-column justify-content-center"
+              >
+                <div class="img-wrapper d-flex justify-content-center">
+                  <img src="./media/sadman.jpg" alt="Front Image" />
+                </div>
+              </div>
+              <div class="card-back p-md-3 p-2">
+                <div class="img-wrapper d-flex flex-column align-items-center">
+                  <img src="./media/sadman.jpg" alt="Back Image" />
+                  <p>sad man</p>
+                </div>
+              </div>
+            </div>
+            <div
+              data-id="card1"
+              class="d-flex flex-row gap-4 gap-lg-5 justify-content-center align-items-center icons"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center p-2 rounded-circle icon sound"
+              >
+                <img
+                  src="./media/soundIcon.png"
+                  class="w-100 h-100 object-fit-contain"
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center p-2 rounded-circle icon speak"
+              >
+                <img
+                  src="./media/speakIcon.png"
+                  class="w-100 h-100 object-fit-contain"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex flex-column gap-5">
+            <div class="card-container rounded-5" data-id="card2">
+              <div
+                class="card-front p-md-3 p-2 d-flex flex-column justify-content-center"
+              >
+                <div class="img-wrapper d-flex justify-content-center">
+                  <img src="./media/sadman.jpg" alt="Front Image" />
+                </div>
+              </div>
+              <div class="card-back p-md-3 p-2">
+                <div class="img-wrapper d-flex flex-column align-items-center">
+                  <img src="./media/sadman.jpg" alt="Back Image" />
+                  <p>sad man</p>
+                </div>
+              </div>
+            </div>
+            <div
+              data-id="card2"
+              class="d-flex flex-row gap-4 gap-lg-5 justify-content-center align-items-center icons"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center p-2 rounded-circle icon sound"
+              >
+                <img
+                  src="./media/soundIcon.png"
+                  class="w-100 h-100 object-fit-contain"
+                />
+              </div>
+
+              <div
+                class="d-flex justify-content-center align-items-center p-2 rounded-circle icon speak"
+              >
+                <img
+                  src="./media/speakIcon.png"
+                  class="w-100 h-100 object-fit-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/script.js" async></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/all.min.js"></script>
+  </body>
+</html>
